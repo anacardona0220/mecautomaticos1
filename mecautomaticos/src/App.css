@@ -3,15 +3,29 @@
   padding: 0;
   box-sizing: inherit;
 }
+
+.header{
+  min-height: 60rem;
+  background-image: url(https://img.freepik.com/free-photo/modern-automated-assembly-line-cars-latest-technological-neutral-technologies-production-cars-plant-assembly-shop-modern-cars_645730-531.jpg?w=996&t=st=1694205388~exp=1694205988~hmac=81a0ea2e91caeb4a1c692b7b6e8937bd6b4eedb09590ac045f367057bbc3da00);
+  background-repeat: no-repeat;
+  background-size: cover;/*para que tome todo el espacio*/
+  background-position: center;
+  padding: 5rem;
+
+
+}
 .list-1{
   list-style: none;
   background-color: blueviolet;
   margin-top: 20px;
+  
 }
 .list-2{
   background-color: aqua;
   margin-top: 20px;
+
   display: flex;
+  flex-direction: row;
 }
 
 .list-3{
@@ -24,23 +38,3 @@
   margin-top: 20px;
 }
 
-.list-2-1{
-  align-items: center;
-}
-
-.list-2-4{
-  align-items: center;
-
-}
-
-.list-2-5{
-  align-items: center;
-}
-
-.list-2-3{
-  align-items: center;
-
-}
-.list-2-2{
-  align-items: center;
-}
