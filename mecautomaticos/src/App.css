@@ -3,8 +3,24 @@
   padding: 0;
   box-sizing: inherit;
 }
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 50px 50px;
+}
 
-*, *::before, *:after{
+h1{
+  font-size: 50px;
+}
+
+h2{
+  font-size: 35px;
+}
+
+h3{
+  font-size: 20px;
+}
+
+/* *, *::before, *:after{
   box-sizing: inherit;
 }
 
@@ -12,12 +28,12 @@ body{
   font-family: var(--fuentePrincipal);
   font-size: 1.6rem;
   line-height: 1.8rem;/*interlineado*/
-}
+/* }
 
 h1, h2, h3{
   font-weight: 900;
   margin: 1rem 0 2rem 0;
-}
+/* } */ 
 
 /* h1{
   font-size: 4.8rem;
@@ -29,39 +45,37 @@ h3{
   font-size: 5rem; */
 /* } */
 
-a{
+/* a{
   text-decoration: none;
 }
 
 img{
   max-width: 100%;
   display: inline-block;/*para que no tengan esa linea en la parte inferior*/
-}
+/* } */
 
-.contenedor{
+/* .contenedor{
   max-width:  120rem;
   margin: 0 auto;
   width: 90%;
-}
+} */ 
 
-.text-center{
+/* .text-center{
   text-align: center;
 
 }
 
 .mt-5{
   margin-top: 5rem;
-}
+} */
 
 
 .header{
-  min-height: 60rem;
   background-image: url(https://img.freepik.com/free-photo/modern-automated-assembly-line-cars-latest-technological-neutral-technologies-production-cars-plant-assembly-shop-modern-cars_645730-531.jpg?w=996&t=st=1694205388~exp=1694205988~hmac=81a0ea2e91caeb4a1c692b7b6e8937bd6b4eedb09590ac045f367057bbc3da00);
   background-repeat: no-repeat;
   background-size: cover;/*para que tome todo el espacio*/
   background-position: center;
-  padding: 5rem;
-
+  height: 80vh;
 }
 
 @media(min-width: 768px){
@@ -70,55 +84,180 @@ img{
   }
   }
 
-  .container-header{
+  /* .container-header{
     display: flex;
     flex-direction: column;
-    height: calc(60rem - 4rem);
-    justify-content: space-between;
-    color: var(--blanco);
-  }
+    /* height: calc(60rem - 4rem); */
+    /* justify-content: space-between; */
+    
+  /*} */
 
-  .nombre-sitio{
-    font-weight: 300;
+/*codigo medio util*/
 
-  }
+.infoCompany{
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .nombre-sitio span{
-    font-weight: 900;
+.nameCompany{
+  margin-left: 50px;
+}
 
-  }
+.nameCompany h1{
+  color: rgb(210, 148, 33);
+}
 
-  .lc{
-    display: flex;
-    justify-content: space-between;
-  }
+.nameCompany h1 span{
+  color: orange;
+  box-shadow: 5px 5px 5px rgb(210, 148, 33);;
+}
 
-  .contacto{
-    flex-direction: column;
+.logoNumber img{
+  width: 150px;
+  height: 150px;
+  margin: 3px 50px 3px 3px;
+}
 
-  }
+.navbar{
+  margin-top: 30px;
+  background-color: aliceblue;
+  padding: 10px;
+}
 
-
-.list-1{
+.navbar .navegacion ul{
+  display: flex;
   list-style: none;
-  background-color: blueviolet;
-  margin-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar .navegacion ul li{
+  margin: 0 20px;
+  font-size: 21px;
+  font-weight: 550;
+}
+
+.slogan{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 40vh;
+  background-color: aliceblue;
+}
+
+.mision-vision{
+  display: flex;
+
   
 }
-.list-2{
-  background-color: aqua;
-  margin-top: 20px;
 
+.title-nosotros{
+
+  margin: 8px 0 8px 40px;
+}
+
+
+.myv-parrafos{
+  background-color: blueviolet;
   display: flex;
-  flex-direction: row;
+  
 }
 
-.list-3{
-  background-color: aquamarine;
-  margin-top: 20px;
+.myv-parrafos .myv:nth-child(1){
+  background-color: brown;
+  flex-basis: calc(50% - 1rem);
+  flex: 1;
+  padding: 8px;
+
 }
 
-.list-4{
-  background-color: red;
-  margin-top: 20px;
+.myv-parrafos .myv:nth-child(2){
+  flex-basis: calc(50% - 1rem);
+  flex: 1;
+  padding: 8px;
+
 }
+
+.myv{
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.myv p{
+  text-align: justify; 
+}
+
+.image-nosotros img{
+  width: 400px;
+  margin: 0 20px;
+}
+
+.box{
+  width: 300px;
+  height: 300px;
+}
+.servicios{
+  background-color: bisque;
+}
+
+.title-servicios{
+  background-color: aqua;
+  font-size: 25px;
+  margin: 8px 0 8px 40px;
+}
+
+.btn{
+  background-color: gray;
+  height: 296px;
+  width: 30px;
+}
+
+.list-2-1{
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  
+  
+  
+}
+.title-auto{
+  text-align: center;
+  
+}
+
+.image-btn{
+  display: flex;
+  justify-content: center;
+  
+  
+  
+}
+
+.list-2-1 .auto:nth-child(1){
+  background-color: whitesmoke;
+  flex-basis: calc(50% - 1rem);
+  flex: 1;
+  margin: 20px 20px 20px 40px;
+  
+}
+
+.list-2-1 .auto:nth-child(2){
+  flex-basis: calc(50% - 1rem);
+  flex: 1;
+  padding: 8px;
+  margin: 20px 40px 20px 20px;
+  
+}
+
+.list-2-1 p{
+  background-color: aliceblue;
+  text-align: justify;
+  
+}
+
+
+
+
+

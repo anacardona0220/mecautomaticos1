@@ -1,39 +1,60 @@
+import logo from '../assets/images/logo.png'
+import nosotros from './Nosotros'
+
 const Header = () => {
   return (
     <div className="header">
-      <div className="container container-header">
-        <div className="barra" />
-          <div className="logo lc">
-            <h1 className="nombre-sitio">
-              Mecautomaticos <span>S.A.S</span>
+
+      {/* contenedor-header */}
+      <div className="container-header">
+        {/* start info company */}
+        <div className="infoCompany">
+          {/* start nameCompany */}
+          <div className="nameCompany">
+            <h1>
+              Mecautomáticos <span>S.A.S</span>
             </h1>
           </div>
-          <div className="contacto lc">
-            <a href="tel:3136789101">3136789101</a>
-            <nav className="navegacion">
-              <ul>
-                <li className="list" href="#">
-                  Nosotros
-                </li>
-                <li className="list" href="#">
-                  Servicios
-                </li>
-                <li className="list" href="#">
-                  Proyectos
-                </li>
-                <li className="list" href="#">
-                  Contactanos
-                </li>
-              </ul>
-            </nav>
+          {/* end nameCompany */}
+
+          {/*start Logo and phone number */}
+          <div className="logoNumber">
+            <img src={logo} alt="No image" />
           </div>
-        <div />
+          {/* end Logo and phone number */}
+        </div>
+        {/* end info company */}
+
+        {/* start navbar */}
+        <div className="navbar">
+          <nav className="navegacion">
+            <ul>
+              <li className="list" href={nosotros}>
+                Nosotros
+              </li>
+              <li className="list" href="#">
+                Servicios
+              </li>
+              <li className="list" href="#">
+                Proyectos
+              </li>
+              <li className="list" href="#">
+                Contactános
+              </li>
+            </ul>
+          </nav>
+        </div>
+        {/* end navbar */}
+        
+        {/* start slogan */}
         <div className="slogan">
-          <h1>Automatizando el futuro</h1>
+          <h2>Automatizando el futuro</h2>
           <p>Soluciones inteligentes para la industria</p>
         </div>
-        {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVd0xngEMMtA5DN6tRPdb0j98y-BZnZXzpQ&usqp=CAU" /> */}
+        {/* end slogan */}
+
       </div>
+      {/* /end contenedor-header */}
     </div>
   );
 };
