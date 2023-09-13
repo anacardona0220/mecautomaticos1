@@ -5,7 +5,7 @@
 }
 body{
   font-family: 'Roboto', sans-serif;
-  margin: 50px 50px;
+  margin: 50px 80px;
 }
 
 h1{
@@ -18,7 +18,9 @@ h2{
 
 h3{
   font-size: 20px;
+  text-align: center;
 }
+
 
 /* *, *::before, *:after{
   box-sizing: inherit;
@@ -180,10 +182,7 @@ img{
 
 }
 
-.myv{
-  /* display: flex;
-  flex-direction: column; */
-}
+
 
 .myv p{
   text-align: justify; 
@@ -195,35 +194,47 @@ img{
 }
 
 .box{
-  width: 300px;
-  height: 300px;
-}
-.servicios{
-  background-color: bisque;
+  width: 100%;
+   
 }
 
 .title-servicios{
-  background-color: aqua;
-  font-size: 25px;
-  margin: 8px 0 8px 40px;
+  margin-left: 40px;
+}
+
+
+.card h3{
+  margin: 20px;
+  width: 100%;
 }
 
 .btn{
-  background-color: gray;
+  background-color: white;
   height: 296px;
-  width: 30px;
+  width: 100%;
+  height: auto;
+  
+}
+
+.btn:hover{
+  background-color: aqua;
 }
 
 .list-2-1{
   background-color: grey;
   display: flex;
   align-items: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
   
   
   
 }
 .title-auto{
   text-align: center;
+  width: 100%;
   
 }
 
@@ -231,12 +242,17 @@ img{
   display: flex;
   justify-content: center;
   
-  
+}
+
+.box{
   
 }
 
+.auto{
+  width: 100%;
+}
 .list-2-1 .auto:nth-child(1){
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   flex-basis: calc(50% - 1rem);
   flex: 1;
   margin: 20px 20px 20px 40px;
@@ -251,11 +267,56 @@ img{
   
 }
 
-.list-2-1 p{
-  background-color: aliceblue;
+.pepa{
+  padding: 40px;
   text-align: justify;
+}
+
+.proyectos{
+  background-color: blanchedalmond;
+  margin-top: 20px;
+}
+
+.title-proyectos{
+  background-color: aqua;
+  margin: 8px 0 8px 40px;
+}
+
+.tya-parrafos{
+  display: flex;
   
 }
+
+.tya-parrafos .tya:nth-child(1){
+  flex-basis: calc(50% - 1rem);
+  flex: 1;
+}
+
+.tya-parrafos .tya:nth-child(2){
+  flex-basis: calc(50% - 1rem);
+  flex: 1;
+}
+
+.tya-parrafos img{
+  width: 300px;
+  height: 300px;
+}
+
+.tya-parrafos p{
+  text-align: justify;
+  margin: 22px;
+  align-items: center;
+  
+}
+
+.titles{
+  text-align: center;
+}
+
+
+
+
+
 
 
 

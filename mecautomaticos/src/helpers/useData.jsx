@@ -43,7 +43,17 @@ const useData = [
     parrafo:
       "Ofrecemos servicios de mantenimiento preventivo y correctivo para garantizar el funcionamiento continuo y confiable de los sistemas automatizados y equipos electrónicos. Nuestro equipo de soporte técnico está disponible para resolver cualquier problema de manera eficiente."
     
-  }
+  },
+
+  {
+    titulo: "Consultoría y Desarrollo a Medida",
+    img:
+      "https://img.freepik.com/free-photo/still-life-business-roles-with-various-mechanism-pieces_23-2149352652.jpg?w=900&t=st=1694187938~exp=1694188538~hmac=f782c5091764eb549bd88d192fb2811b85c19cfccbec1e603106d042b895b102",
+    btn: ">",
+    parrafo:
+      "Brindamos servicios de consultoría en automatización industrial y electrónica, asesorando a las empresas en la optimización de sus procesos y sistemas. Además, desarrollamos soluciones a medida para abordar desafíos específicos de nuestros clientes."
+    
+  },
 
 ];
 

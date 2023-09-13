@@ -1,31 +1,32 @@
- 
+import { useState } from "react";
 
+const ServiciosComp = ({ data }) => {
+  const [mostrarParrafo, setMostrarParrafo] = useState(false);
 
+  const cambiarStateParrafo = () => {
+    setMostrarParrafo(!mostrarParrafo);
+  };
+  const { titulo, img, btn, parrafo } = data;
 
-// eslint-disable-next-line react/prop-types
-const ServiciosComp = ({data}) => {
-    // eslint-disable-next-line react/prop-types
-    const {titulo, img, btn,  parrafo} = data;
   return (
     <div className="list-2-1">
-      {/* start image-btn */}
-      <div className="title-auto auto">
-        <h3>{titulo}</h3>
-        <div className="image-btn">
-          <img
-            className="box"
-            src={img}
-            alt="automatizacion"
-          />
-       <button className={btn}>{btn}</button>
-        
-        
+      <div className="auto">
+        <div className="card">
+
+          <h3>
+            {titulo}
+          </h3>
+          <div className="image-btn">
+            <img className="box" src={img} alt="automatizacion" />
+            <button className="btn" onClick={cambiarStateParrafo}>
+              {btn}
+            </button>
+          </div>
         </div>
       </div>
-      {/* end image-btn */}
-      <p className=" auto">
-        {parrafo}
-      </p>
+      <div className="auto pepa">
+        {mostrarParrafo ? parrafo : ""}
+      </div>
     </div>
   );
 };
