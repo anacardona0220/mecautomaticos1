@@ -9,11 +9,11 @@ const Nosotros = () => {
       {/* end title-nosotros */}
       {/* start mision y vision */}
       <div className="mision-vision">
-        <div className="image-nosotros">
-          <img src="https://img.freepik.com/free-photo/engineer-cooperation-male-female-technician-maintenance-control-relay-robot-arm-system-welding-with-tablet-laptop-control-quality-operate-process-work-heavy-industry-40-manufacturing-factory_609648-792.jpg?w=900&t=st=1694124253~exp=1694124853~hmac=0eb15f38e3458652005a3af491d0dc64f089a9791cf7947c33e6d3d00e706dd5" />
-        </div>
-        {/* star parrafos */}
         <div className="myv-parrafos">
+          <div className="myv">
+            <img src="https://img.freepik.com/free-photo/engineer-cooperation-male-female-technician-maintenance-control-relay-robot-arm-system-welding-with-tablet-laptop-control-quality-operate-process-work-heavy-industry-40-manufacturing-factory_609648-792.jpg?w=900&t=st=1694124253~exp=1694124853~hmac=0eb15f38e3458652005a3af491d0dc64f089a9791cf7947c33e6d3d00e706dd5" />
+          </div>
+          {/* star parrafos */}
           <div className="myv">
             <h3>Mision</h3>
             <p>
