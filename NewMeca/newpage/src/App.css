@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 16px;
+  background-color: aquamarine;
+}
+
+/* start header */
+
+img {
+  width: 3rem;
+  height: auto;
+  /* object-fit: contain; */
+}
+
+.container-header{
+  background-image: url(./assets/image1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  
+}
+
+.container-header1{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+ 
+}
+
+.container-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: aqua; */
+  
+}
+
+.container-logo-nombre{
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: white;
+}
+
+.container-nsc{
+  display: flex;
+  /* background-color: blueviolet; */
+  align-items: center;
+  gap: 0.4rem;
+  color: white;
+  
+  
+}
+
+.cbtn{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.slogan{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.7rem;
+  font-size: 0.8rem;
+  color: yellow;
+}
+
+.btn{
+  background: #F5385D;
+  border: none;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+@media (min-width: 700px) {
+  
+    .container-nsc{
+      gap: 5rem;
+      
+    }
+    .container-logo-nombre{
+      font-size: 1.2rem;
+    }
+    
+    img {
+    width: 4rem;
+    height: auto;
+  /* object-fit: contain; */
+  }
+
+  .slogan{
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  }
+
+  @media (min-width: 1024px){
+    .container-header1{
+      padding: 1rem;
+    }
+
+    html{
+      font-size: 18px;
+    }
+  }
